@@ -1,18 +1,49 @@
-﻿# OS / editor
+# OS / editor
 Thumbs.db
 Desktop.ini
 .DS_Store
+._*
 *.swp
+*.swo
+*~
 .vscode/
 .idea/
 
-# Logs / temp
+# Logs / temp / cache
 *.log
 *.tmp
+*.temp
+*.bak
+*.orig
+.cache/
 
-# Dependencies / build output (uncomment as needed)
-# node_modules/
-# dist/
-# build/
-# __pycache__/
-# .venv/
+# Dependency directories
+node_modules/
+.pnpm-store/
+.npm/
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+htmlcov/
+
+# Build output
+dist/
+build/
+out/
+target/
+coverage/
+*.tsbuildinfo
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
